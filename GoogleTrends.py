@@ -6,8 +6,11 @@ import csv
 import time
 from random import gauss
 
+rangestart = 0
+rangeend = 2
+
 keywordsfile = "keywords.csv"
-storedatafile = "GoogleTrends_v2.csv"
+storedatafile = "GoogleTrends_" + str(rangestart) + "-" + str(rangeend) + ".csv"
 skippeddatafile = "GoogleTrendsSkipped_v3"
 
 google_username = "dpassasd@gmail.com"
@@ -21,6 +24,8 @@ flat_list = []
 for sublist in data:
     for item in sublist:
         flat_list.append(item)
+
+flat_list = flat_list[rangestart:rangeend]
 
 # Login to Google. Only need to run this once, the rest of requests will use the same session.
 pytrend = TrendReq(hl='en-US', tz=360)
