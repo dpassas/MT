@@ -6,8 +6,8 @@ import csv
 import time
 from random import gauss
 
-rangestart = 0
-rangeend = 2
+rangestart = 2700
+rangeend = 3000
 
 keywordsfile = "keywords.csv"
 storedatafile = "GoogleTrends_" + str(rangestart) + "-" + str(rangeend) + ".csv"
