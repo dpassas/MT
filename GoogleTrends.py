@@ -14,7 +14,7 @@ storedatafile = "GoogleTrends_" + str(rangestart) + "-" + str(rangeend) + ".csv"
 skippeddatafile = "GoogleTrendsSkipped_v3"
 
 google_username = "dpassasd@gmail.com"
-google_password = "i31bC-kqrRhe1nfall"
+google_password = "i"
 
 #Get smartphone names list to be used as keywords
 with open(keywordsfile) as csvfile:
